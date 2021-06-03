@@ -1,4 +1,5 @@
 module.exports = function(profitableDept){
+    //console.log(profitableDept);
 
     if (typeof profitableDept != 'object'){
       return false
