@@ -1,5 +1,4 @@
 module.exports = function(profitableDept){
-    //console.log(profitableDept);
 
     if (typeof profitableDept != 'object'){
       return false
@@ -24,10 +23,7 @@ module.exports = function(profitableDept){
       sortArray.push([saleDeptartment, deptartmentObj[saleDeptartment]]);
     }
     sortArray.sort(function(first, second){
-      //console.log(second[1] - first[1])
-      //console.log(first[1] - second[1]) //Wrong
       return second[1] - first[1];
     })
-    //console.log(sortArray[0][0])
     return sortArray[0][0];
   }
