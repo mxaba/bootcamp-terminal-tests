@@ -1,4 +1,5 @@
 let assert = require("assert");
+const { type } = require("os");
 let mostProfitableDepartment = require("../mostProfitableDepartment");
 
 var salesData = [
@@ -25,7 +26,7 @@ describe("mostProfitableDepartment Function", function(){
     it("Should return the  name of the most profitable department given data set", function(){
         assert.equal(department, mostProfitableDepartment(salesData))
     })
-    it("It should make sure that the output is a String", function(){
-        assert.isString(mostProfitableDepartment(salesData), "The output of this function should be string")
+    it("Should return false if passed data is not an object!", function(){
+        assert.equal(mostProfitableDepartment('salesData'), false)
     })
 })

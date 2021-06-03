@@ -8,7 +8,7 @@ describe("fromWhere Function", function(){
         assert.equal('Cape Town', fromWhere('CA'))
         assert.equal('Some other place!', fromWhere('GP'))
     })
-    it("It should return false when the argument passed is not a string", function(){
+    it("Should return false when the argument passed is not a string", function(){
         assert.equal(false, fromWhere(678))
         assert.equal(false, fromWhere([]))
     })

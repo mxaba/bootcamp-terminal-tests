@@ -1,8 +1,10 @@
 module.exports = function(profitableDept){
     //console.log(profitableDept);
+
+    if (typeof profitableDept != 'object'){
+      return false
+    }
     var deptartmentObj = {hardware:0, outdoor:0, carpentry:0, electronics:0};
-    var department = {};
-    
     for(var appear in profitableDept){
       if(profitableDept[appear].department === 'outdoor'){
         deptartmentObj.outdoor += profitableDept[appear].sales;

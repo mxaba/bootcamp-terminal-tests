@@ -16,7 +16,7 @@ describe('The greet function', function(){
         assert.equal('Hello, Mcebo', greet('Mcebo'));
     });
 
-    it("When a number is passed or the argument passed is not a string, it should return false", function(){
+    it("When a number is passed or the argument passed is not a string, Should return false", function(){
         assert.equal(false, greet(45))
     })
 

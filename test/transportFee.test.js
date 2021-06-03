@@ -7,7 +7,7 @@ describe("transportFee Function", function(){
         assert.equal("R20", transportFee("morning"))
         assert.equal("free", transportFee("nightshift"))
     })
-    it("It should return false if the argument passed is not a string", function(){
+    it("Should return false if the argument passed is not a string", function(){
         assert.deepEqual(false, transportFee(45))
     })
 })
