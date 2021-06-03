@@ -1,4 +1,4 @@
-# BootCa,p Terminal Tests
+# BootCamp Terminal Tests
 
 # Badges
 
